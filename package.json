@@ -1,0 +1,60 @@
+{
+  "name": "launchmat",
+  "title": "Launchmat",
+  "description": "A powerful Launchpad replacement for macOS with custom organization and Liquid Glass design",
+  "icon": "rocket.png",
+  "author": "your_github_username",
+  "contributors": [
+    "your_github_username"
+  ],
+  "categories": [
+    "Applications",
+    "Productivity"
+  ],
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "index",
+      "title": "Launchmat",
+      "description": "Launch and organize your applications with custom folders",
+      "mode": "view"
+    },
+    {
+      "name": "settings",
+      "title": "Launchmat Settings",
+      "description": "Configure Launchmat folders and layout",
+      "mode": "view"
+    },
+    {
+      "name": "quick-add",
+      "title": "Quick Add to Folder",
+      "description": "Quickly add applications to custom folders",
+      "mode": "view"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.79.0",
+    "fs-extra": "^11.1.1",
+    "plist": "^3.1.0"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^1.0.8",
+    "@types/fs-extra": "^11.0.1",
+    "@types/node": "~20.10.0",
+    "@types/react": "^18.2.79",
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.3"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "setup-dev": "echo 'Setting up Launchmat development environment...' && npm run lint",
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist node_modules/.cache",
+    "prepublishOnly": "echo \"\\n\\nIt seems like you are trying to publish the Raycast extension to npm.\\n\\nIf you did intend to publish it to npm, remove the \\`prepublishOnly\\` script and rerun \\`npm publish\\` again.\\nIf you wanted to publish it to the Raycast Store instead, use \\`npm run publish\\` instead.\\n\\n\" && exit 1",
+    "publish": "npx @raycast/api@latest publish"
+  }
+}

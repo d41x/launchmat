@@ -1,0 +1,83 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "preferences": [
+    {
+      "name": "columns",
+      "title": "Grid Columns",
+      "description": "Number of columns to display in the grid",
+      "type": "dropdown",
+      "default": "6",
+      "data": [
+        { "title": "4 Columns", "value": "4" },
+        { "title": "5 Columns", "value": "5" },
+        { "title": "6 Columns", "value": "6" },
+        { "title": "7 Columns", "value": "7" },
+        { "title": "8 Columns", "value": "8" }
+      ]
+    },
+    {
+      "name": "itemsPerPage",
+      "title": "Items Per Page",
+      "description": "Maximum number of items to show per page",
+      "type": "dropdown",
+      "default": "28",
+      "data": [
+        { "title": "20 Items", "value": "20" },
+        { "title": "24 Items", "value": "24" },
+        { "title": "28 Items", "value": "28" },
+        { "title": "32 Items", "value": "32" },
+        { "title": "36 Items", "value": "36" },
+        { "title": "40 Items", "value": "40" }
+      ]
+    },
+    {
+      "name": "enableLiquidGlass",
+      "title": "Liquid Glass Effect",
+      "description": "Enable translucent Liquid Glass design elements",
+      "type": "checkbox",
+      "default": true,
+      "required": false
+    },
+    {
+      "name": "defaultFolderColor",
+      "title": "Default Folder Color",
+      "description": "Default color for new folders",
+      "type": "dropdown",
+      "default": "#007AFF",
+      "data": [
+        { "title": "Blue", "value": "#007AFF" },
+        { "title": "Red", "value": "#FF6B6B" },
+        { "title": "Green", "value": "#96CEB4" },
+        { "title": "Orange", "value": "#FF9F43" },
+        { "title": "Purple", "value": "#5F27CD" },
+        { "title": "Pink", "value": "#FF9FF3" },
+        { "title": "Teal", "value": "#4ECDC4" },
+        { "title": "Yellow", "value": "#FECA57" }
+      ]
+    },
+    {
+      "name": "autoOrganize",
+      "title": "Auto-organize New Apps",
+      "description": "Automatically categorize newly installed applications",
+      "type": "checkbox",
+      "default": true,
+      "required": false
+    },
+    {
+      "name": "showAppVersion",
+      "title": "Show App Versions",
+      "description": "Display application version numbers in the subtitle",
+      "type": "checkbox",
+      "default": true,
+      "required": false
+    },
+    {
+      "name": "enableGestures",
+      "title": "Enable Gesture Navigation",
+      "description": "Use arrow keys for page navigation (Launchpad-style)",
+      "type": "checkbox",
+      "default": true,
+      "required": false
+    }
+  ]
+}
